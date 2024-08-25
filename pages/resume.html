@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="../Fonts/WEB/css/satoshi.css">
+    <style>
+        /* Ensure images are responsive */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="2xl:container mx-auto ">
+            <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 gap-2 pt-3">
+                <div class="flex">
+                    <h1 class="font-[Satoshi-Regular] text-3xl md:text-4xl">My Portfolio</h1>
+                </div>
+                <div class="flex justify-between items-center">
+                    <p class="font-[Satoshi-Regular] text-base hidden md:block">Sivanesan</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-lightbulb">
+                        <path
+                            d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+                        <path d="M9 18h6" />
+                        <path d="M10 22h4" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class=" py-4 hidden md:block">
+        <div class="2xl:container mx-auto">
+            <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1">
+                <nav class=" bg-white shadow-lg py-4 rounded-full ring-1 ring-gray-200">
+                    <ul class="flex justify-around">
+                        <li class="font-[Satoshi-Regular] text-base"><a href="../index.html">
+                                home
+                            </a>
+
+
+                        </li>
+                        <li class="font-[Satoshi-Regular] text-base">
+                            <a href="../pages/about.html">
+                                About
+
+                            </a>
+                        </li>
+                        <li class="font-[Satoshi-Regular] text-base">
+                            <a href="../pages/project.html">
+                                Project
+
+                            </a>
+                        </li>
+                        <li class="font-[Satoshi-Regular] text-base">
+                            <a href="../pages/resume.html">
+                                Resume
+
+                            </a>
+                        </li>
+                        <li class="font-[Satoshi-Regular] text-base">
+                            <a href="../pages/ama.html">
+                                Ama
+
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+    </header>
+
+    <header class=" py-4 md:hidden">
+        <div class=" mx-auto md:hidden">
+            <div class="w-[100%] mx-auto grid grid-cols-1 fixed bottom-0 ">
+                <div class="w-[90%] mx-auto">
+                    <nav class=" bg-white shadow-lg py-4 rounded-full ring-1 ring-gray-200">
+                        <ul class="flex justify-around">
+                            <li class="font-[Satoshi-Regular] text-base"><a href="../index.html">
+                                    home
+                                </a>
+
+
+                            </li>
+                            <li class="font-[Satoshi-Regular] text-base">
+                                <a href="../pages/about.html">
+                                    About
+
+                                </a>
+                            </li>
+                            <li class="font-[Satoshi-Regular] text-base">
+                                <a href="../pages/project.html">
+                                    Project
+
+                                </a>
+                            </li>
+                            <li class="font-[Satoshi-Regular] text-base">
+                                <a href="../pages/resume.html">
+                                    Resume
+
+                                </a>
+                            </li>
+                            <li class="font-[Satoshi-Regular] text-base">
+                                <a href="../pages/ama.html">
+                                    Ama
+
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- Content -->
+    <main class="py-8">
+        <div class="2xl:container mx-auto px-4">
+            <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 gap-2">
+                <div>
+                    <p class="font-[Satoshi-Regular] text-3xl font-bold py-2">Resume.</p>
+                    <p class="font-[Satoshi-Regular] text-lg font-normal py-2">Here are some projects I've worked on</p>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="border rounded-lg overflow-hidden shadow-lg bg-white">
+                    <img src="https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWd1fHx8fGVufDB8fHx8&auto-format&fit=crop&w=1470&q=80"
+                        alt="Project Image" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="font-[Satoshi-Regular] text-2xl font-normal py-2">lorem ipsum dolor sit amet,
+                            consectetur</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-4">
+                            <button
+                                class="bg-green-400 text-white w-full py-2 rounded-3xl font-[Satoshi-Regular] text-base">Resume
+                                Link</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="2xl:container mx-auto px-4">
+            <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 gap-2">
+                <div class="text-center py-4">
+                    <p class="font-[Satoshi-Regular] text-sm">© 2023 by Sivanesan. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
