@@ -15,9 +15,19 @@
             height: auto;
         }
     </style>
+    <style>
+        #body_.dark-mode {
+            background-color: #1a1a1a; /* Dark background */
+            color: #fff; /* White text color */
+        }
+        #foot_.dark-mode {
+            background-color: #1a1a1a; /* Dark background */
+            color: #fff; /* White text color */
+        }
+    </style>
 </head>
 
-<body>
+<body id="body_">
 
     <!-- Header -->
     <header>
@@ -241,8 +251,19 @@
             </div>
         </div>
     </footer>
-
-
+    <button onclick="toggleDarkMode()" class="fixed top-5 right-5 p-2 bg-gray-200 dark:bg-gray-800 rounded-full ">
+        <span class="text-gray-800 dark:text-gray-200">🌙</span>
+    </button>
+    <script>
+        let body_ = document.getElementById("body_");
+        let foot_ = document.getElementById("foot_");
+        const toggleDarkMode = ()=>{
+            console.log(body_.classList);
+            body_.classList.toggle('dark-mode');
+            foot_.classList.toggle('dark-mode');
+        }
+    </script>
+    
 </body>
 
 </html>

@@ -9,12 +9,21 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="./Fonts/WEB/css/satoshi.css">
 </head>
-
-<body>
-
+<style>
+    #body_.dark-mode {
+        background-color: #1a1a1a; /* Dark background */
+        color: #fff; /* White text color */
+    }
+    #foot_.dark-mode {
+        background-color: #1a1a1a; /* Dark background */
+        color: #fff; /* White text color */
+    }
+</style>
+<body class="" id="body_">
+    
     <section class="py-5">
         <div class="2xl:container mx-auto">
-            <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 gap-2 pt-5">
+            <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 gap-2">
                 <h1 class=" text-3xl ">My Portfolio</h1>
                 <div class="flex justify-between">
                     <p class="font-[Satoshi-Regular] text-base">sivanesan</p>
@@ -93,14 +102,14 @@
 
             </div>
 
-
+            
         </div>
     </section>
 
     <!-- class="fixed bottom-0 left-0 w-full bg-white shadow-lg" -->
-    <footer>
-        <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 py-5  ">
-            <div>
+    <footer class="" id="foot_">
+            <div class="w-[90%] md:w-[60%] mx-auto grid grid-cols-1 py-5  "  >
+                <div>
                 <div class=" flex justify-between ">
                     <p>© 2023 by sivanesan.All rights reserved.</p>
                     <div class="flex gap-2">
@@ -128,13 +137,23 @@
                     </div>
 
                 </div>
-
+                
 
             </div>
-    </footer>
+        </footer>
 
-
-
+        <button onclick="toggleDarkMode()" class="fixed top-5 right-5 p-2 bg-gray-200 dark:bg-gray-800 rounded-full ">
+            <span class="text-gray-800 dark:text-gray-200">🌙</span>
+        </button>
+<script>
+    let body_ = document.getElementById("body_");
+    let foot_ = document.getElementById("foot_");
+    const toggleDarkMode = ()=>{
+        console.log(body_.classList);
+        body_.classList.toggle('dark-mode');
+        foot_.classList.toggle('dark-mode');
+    }
+</script>
 
 </body>
 
